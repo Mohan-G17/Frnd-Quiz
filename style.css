@@ -1,0 +1,421 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #021B3A,
+        #064663,
+        #0E7490
+    );
+
+    color:white;
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+}
+
+
+
+/* Floating particles */
+
+.particles::before{
+
+    content:"❄️ ❄️ ❄️ 💙 ❄️";
+
+    position:fixed;
+
+    top:-20px;
+
+    left:0;
+
+    width:100%;
+
+    font-size:35px;
+
+    animation:snow 12s linear infinite;
+
+    opacity:0.7;
+
+}
+
+
+
+@keyframes snow{
+
+    from{
+        transform:translateY(-50px);
+    }
+
+    to{
+        transform:translateY(100vh);
+    }
+
+}
+
+
+
+
+
+
+/* Unlock Screen */
+
+
+.screen{
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+
+.screen h1{
+
+    font-family:'Satisfy',cursive;
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.screen p{
+
+    font-size:18px;
+
+    margin:15px;
+
+}
+
+
+
+input{
+
+    padding:15px;
+
+    width:280px;
+
+    border-radius:30px;
+
+    border:none;
+
+    outline:none;
+
+    text-align:center;
+
+    font-size:16px;
+
+}
+
+
+
+
+
+button{
+
+    margin:15px;
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#38bdf8;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+
+button:hover{
+
+    transform:scale(1.1);
+
+    background:#0ea5e9;
+
+}
+
+
+
+
+
+
+
+/* Main Header */
+
+
+header{
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+
+
+header h1{
+
+    font-family:'Satisfy',cursive;
+
+    font-size:55px;
+
+}
+
+
+
+header p{
+
+    font-size:18px;
+
+}
+
+
+
+
+
+
+
+/* Music Button */
+
+
+.musicBtn{
+
+    display:block;
+
+    margin:auto;
+
+}
+
+
+
+
+
+
+
+/* Slideshow */
+
+
+.slideshow{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin:30px;
+
+}
+
+
+
+.slideshow img{
+
+    width:300px;
+
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    box-shadow:0 0 25px #38bdf8;
+
+    animation:fade 2s;
+
+}
+
+
+
+@keyframes fade{
+
+    from{
+        opacity:0.3;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+
+
+
+
+
+
+/* Sections */
+
+
+.counter,
+.letter,
+.timeline,
+.quiz,
+.surprise{
+
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(10px);
+
+    margin:25px;
+
+    padding:25px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+}
+
+
+
+
+
+
+
+/* Letter */
+
+
+.letter h2{
+
+    font-family:'Satisfy',cursive;
+
+    font-size:40px;
+
+}
+
+
+
+#typing{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+
+
+/* Timeline Cards */
+
+
+.card{
+
+    background:rgba(255,255,255,0.15);
+
+    margin:20px;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    transition:0.3s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+
+
+
+
+/* Quiz */
+
+
+.question{
+
+    margin:25px;
+
+}
+
+
+
+.question button{
+
+    display:block;
+
+    margin:10px auto;
+
+}
+
+
+
+
+
+
+
+/* Final Message */
+
+
+#finalMessage{
+
+    display:none;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+}
+
+
+
+#finalMessage h1{
+
+    font-family:'Satisfy',cursive;
+
+    font-size:55px;
+
+}
+
+
+
+#finalMessage p{
+
+    font-size:20px;
+
+    line-height:2;
+
+}

@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Frozen Friendship Journey ❄️💙</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<body>
+
+<div class="particles"></div>
+
+
+<!-- Unlock Screen -->
+
+<section id="unlockScreen" class="screen">
+
+<h1>
+❄️ Friendship Journey 💙
+</h1>
+
+
+<p>
+Every friendship is a beautiful story...
+<br>
+Unlock our frozen memories ✨
+</p>
+
+
+<input
+type="password"
+id="password"
+placeholder="Enter Secret Code 🔐">
+
+
+<button onclick="unlock()">
+Unlock Memories 🔓
+</button>
+
+
+<p id="error"></p>
+
+
+</section>
+
+
+
+
+
+<!-- Main Website -->
+
+<div id="mainContent" style="display:none;">
+
+
+<header>
+
+<h1>
+✨ Friends Forever ✨
+</h1>
+
+
+<p>
+Some moments are frozen forever in our hearts ❄️
+<br>
+Thank you for being a special part of my journey 💙
+</p>
+
+
+</header>
+
+
+
+
+
+<!-- Music Button -->
+
+<button class="musicBtn" onclick="toggleMusic()">
+🎵 Music
+</button>
+
+
+
+
+
+<!-- Slideshow -->
+
+<section class="slideshow">
+
+<img id="slide" src="pic1.jpg">
+
+</section>
+
+
+
+
+
+<!-- Friendship Counter -->
+
+<section class="counter">
+
+<h2>
+💙 Our Friendship Time 💙
+</h2>
+
+<p id="days"></p>
+
+</section>
+
+
+
+
+
+<!-- Letter -->
+
+<section class="letter">
+
+<h2>
+💌 A Letter For You
+</h2>
+
+<p id="typing"></p>
+
+</section>
+
+
+
+
+
+<!-- Timeline -->
+
+<section class="timeline">
+
+<h2>
+📅 Our Frozen Journey
+</h2>
+
+
+<div class="card">
+
+<h3>
+❄️ First Meeting
+</h3>
+
+<p>
+The day our friendship story started.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+😂 Best Memories
+</h3>
+
+<p>
+The laughs and moments we will never forget.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+🌟 Forever Memories
+</h3>
+
+<p>
+More beautiful memories waiting ahead.
+</p>
+
+</div>
+
+
+</section>
+
+<!-- Friendship Quiz -->
+
+<section class="quiz">
+
+<h2>
+🧊 How Well Do You Know Me? 💙
+</h2>
+
+
+<div class="question">
+
+<p>
+1.Do you believe a true friend can become a stranger?😍
+</p>
+
+
+<button onclick="checkAnswer(this,'correct')">
+No, true friendship stays forever 💙
+</button>
+
+
+<button onclick="checkAnswer(this,'wrong')">
+Yes, sometimes life changes😊
+</button>
+
+</div>
+
+
+
+
+
+<div class="question">
+
+<p>
+2. Do you think losing a best friend hurts more than losing a normal friend?🫠
+</p>
+
+
+<button onclick="checkAnswer(this,'wrong')">
+No, every friendship matters 😏
+</button>
+
+
+<button onclick="checkAnswer(this,'correct')">
+Yes, because they are special 💔
+</button>
+
+</div>
+
+
+
+
+
+<div class="question">
+
+<p>
+3. If we become strangers someday, would you still care? 🥺
+</p>
+
+
+<button onclick="checkAnswer(this,'correct')">
+Yes, a little part of me will care 🤍
+</button>
+
+
+<button onclick="checkAnswer(this,'wrong')">
+No, I will forget everything 💔
+</button>
+
+</div>
+
+
+
+<h3 id="score"></h3>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Surprise Button -->
+
+<section class="surprise">
+
+<button onclick="showSurprise()">
+
+🎁 Open Final Surprise
+
+</button>
+
+</section>
+
+
+
+
+
+
+
+<!-- Final Message -->
+
+<section id="finalMessage">
+
+
+<h1>
+💙 Forever Friends 💙
+</h1>
+
+
+<p>
+
+Some memories are not just remembered...
+
+<br>
+
+They stay frozen in our hearts forever ❄️
+
+
+<br><br>
+
+
+✨ Thank You For Everything ✨
+
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Background Music -->
+
+<audio id="music" loop>
+
+<source src="song.mp3" type="audio/mpeg">
+
+</audio>
+
+
+
+
+
+</div>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
